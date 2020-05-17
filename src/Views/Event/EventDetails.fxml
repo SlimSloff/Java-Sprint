@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="840.0" style="-fx-background-color: #DDEBE9;" stylesheets="@../Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controllers.Event.EventDetailsController">
+   <children>
+      <ImageView fx:id="cover" fitHeight="150.0" fitWidth="800.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/event.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" layoutX="20.0" layoutY="180.0" prefHeight="31.0" prefWidth="334.0" text="Event name" />
+      <TextArea fx:id="description" editable="false" layoutX="20.0" layoutY="238.0" prefHeight="88.0" prefWidth="333.0" text="Description" wrapText="true" />
+      <Label fx:id="date" layoutX="20.0" layoutY="206.0" prefHeight="31.0" prefWidth="334.0" text="Event date" />
+      <Button fx:id="join_btn" layoutX="700.0" layoutY="180.0" mnemonicParsing="false" onAction="#joinEvent" prefHeight="26.0" prefWidth="119.0" styleClass="btn-default" text="Join event" />
+      <Label fx:id="duration" layoutX="400.0" layoutY="206.0" prefHeight="31.0" prefWidth="294.0" text="Event duration" />
+      <Label fx:id="place" layoutX="400.0" layoutY="180.0" prefHeight="31.0" prefWidth="294.0" text="Event place" />
+      <AnchorPane fx:id="content" layoutX="398.0" layoutY="267.0" prefHeight="59.0" prefWidth="294.0" />
+      <Label fx:id="participants" layoutX="400.0" layoutY="237.0" prefHeight="31.0" prefWidth="294.0" text="Event participants (?) : " />
+   </children>
+</AnchorPane>

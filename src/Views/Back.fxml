@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BackController">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="1200.0">
+         <children>
+            <Label opacity="0.47" prefHeight="70.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to top right, #F9AFD2, #009DF8);" />
+            <Label layoutX="20.0" layoutY="9.0" text="Admin Pannel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button layoutX="979.0" layoutY="14.0" mnemonicParsing="false" onAction="#stats" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: none;" styleClass="btn-menu" text="  Club statistics" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/pie-chart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="750.0" layoutY="14.0" mnemonicParsing="false" onAction="#clubs" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: none;" styleClass="btn-menu" text="  Manage Clubs" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="content" layoutY="70.0" prefHeight="630.0" prefWidth="1200.0" />
+   </children>
+</AnchorPane>

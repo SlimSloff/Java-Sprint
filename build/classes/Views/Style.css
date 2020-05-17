@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 juin 2019, 05:54:51
+    Author     : Dell
+*/
+
+.text-id 
+{ 
+ -fx-font-smoothing-type: lcd;
+ -fx-text-fill: #757575;
+ -fx-font-size: 13pt;
+}
+
+
+
+.btn-default:hover{
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-default{
+    -fx-background-color: #ffffff ;
+    -fx-text-fill: #333333;
+}
+
+
+.slideShow-btn:hover{
+                -fx-background-radius: 40em;
+                -fx-background-color : #ffffff;
+                -fx-min-width: 15px;
+                -fx-min-height: 15px;
+                -fx-max-width: 15px;
+                -fx-max-height: 15px;
+                -fx-border-color: #FFAA70;
+                -fx-border-radius: 40em;
+                -fx-border-width: 2px;
+                
+
+}
+
+.slideShow-btn:pressed{
+                -fx-background-radius: 40em;
+                -fx-background-color : #FFAA70;
+                -fx-min-width: 15px;
+                -fx-min-height: 15px;
+                -fx-max-width: 15px;
+                -fx-max-height: 15px;
+}
+
+.login-field{
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-border-color: #757575;
+    -fx-background-color: none;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd);
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+
+.underline-btn:hover{
+    -fx-background-color: none;
+    -fx-text-fill: #ff7f50;
+    -fx-underline: true;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1200.0" style="-fx-background-color: #DDEBE9;" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Club.ClubHomepageController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="content" layoutX="50.0" layoutY="24.0" prefHeight="500.0" prefWidth="1100.0" />
+      <AnchorPane fx:id="canCenter" layoutX="186.0" layoutY="551.0" prefHeight="65.0" prefWidth="460.0">
+         <children>
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#ShowAll" prefHeight="42.0" prefWidth="164.0" styleClass="btn-default" text="All clubs">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="339.0" layoutY="12.0" mnemonicParsing="false" onAction="#Search" prefHeight="42.0" prefWidth="108.0" styleClass="btn-default" text="Search">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchTerm" layoutX="189.0" layoutY="12.0" prefHeight="43.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="optional" layoutX="664.0" layoutY="551.0" prefHeight="65.0" prefWidth="351.0">
+         <children>
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#loadCreate" prefHeight="40.0" prefWidth="165.0" styleClass="btn-default" text="Create club">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="187.0" layoutY="13.0" mnemonicParsing="false" onAction="#showMine" prefHeight="40.0" prefWidth="144.0" styleClass="btn-default" text="My clubs">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

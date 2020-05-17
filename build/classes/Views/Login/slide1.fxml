@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="240.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/defile1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
